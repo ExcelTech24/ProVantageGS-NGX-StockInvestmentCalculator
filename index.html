@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ProVantageGSNGX – Stock Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <div class="header-top">
+      <img src="logo.png" alt="ProVantageGSNGX Logo" class="logo" />
+      <div class="header-controls">
+        <button id="darkModeToggle" class="toggle-btn">🌙 Dark Mode</button>
+      </div>
+    </div>
+    <h1>ProVantage</h1>
+    <h6 style="margin: 1px 0; text-align: center; font-size:small;">Global Solution-NGX</h6>
+    <h4 style="margin: 8px 0; text-align: center; font-size:x-large;">Stock Investment Calculator</h4>
+    
+    <!-- set-up below Section -->
+    <div class="global-settings">
+      <h3>Set-up below:</h3>
+      <div class="settings-row">
+        <div class="setting-item">
+          <label for="commissionRate">Commission Rate (%):</label>
+          <input id="commissionRate" type="number" value="3.00" min="0" max="100" step="0.01" placeholder="e.g. 3.00">
+        </div>
+        <div class="setting-item">
+          <label for="profitTarget">Profit Target (%):</label>
+          <input id="profitTarget" type="number" value="10.0" min="0" max="1000" step="0.1" placeholder="e.g. 10.0">
+        </div>
+        
+      </div>
+    </div>
+    
+    <nav>
+      <button id="btnSingle" class="tab">🪙 Single Stock</button>
+      <button id="btnMultiple" class="tab">📈 Multiple Stocks</button>
+    </nav>
+  </header>
+
+  <main id="view"></main>
+
+  <script src="script.js"></script>
+
+  <footer class="footer">
+    <div class="footer-content">
+        <p>&copy; 2025 ProVantageGSNGX. All rights reserved.</p>
+        <p>Powered by <a href="https://www.provantagegsngx.com" target="_blank">ProVantage Global Solutions</a></p>
+    </div>
+</footer>
+</body>
+</html>
+
